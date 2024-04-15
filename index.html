@@ -10,11 +10,11 @@
       name="description"
       content="Découvrez le portfolio de Nina Carducci, photographe professionnelle spécialisée dans la capture de moments précieux et authentiques. Explorez ses services de photographie de mariage, de portrait et bien plus encore. Contactez-nous pour immortaliser vos souvenirs avec des images exceptionnelles."
     />
+    <meta name="robots" content="index, follow">
     <meta
       name="keywords"
       content="photographe, mariage, portrait, concert, entreprise, shooting, retouches, album"
     />
-    <meta name="author" content="Nina Carducci" />
     <!-- Balises meta pour le référencement local -->
     <meta name="language" content="French" />
     <meta name="geo.region" content="FR-NVL" />
@@ -24,6 +24,20 @@
     <meta name="address" content="68 avenue Alsace-Lorraine, 33200 Bordeaux" />
     <meta name="telephone" content="05 56 67 78 89" />
     <meta name="business_hours" content="Mo-Fr 10:00-19:00" />
+    <!-- OpenGraph pour Facebook -->
+    <meta property="og:site_name" content="Nina Carducci - Photographe professionnelle" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nina-carducci.github.io" />
+    <meta property="og:title" content="Nina Carducci - Photographe professionnelle" />
+    <meta property="og:description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle spécialisée dans la capture de moments précieux et authentiques. Explorez ses services de photographie de mariage, de portrait et bien plus encore. Contactez-nous pour immortaliser vos souvenirs avec des images exceptionnelles." />
+    <meta property="og:image" content="https://nina-carducci.github.io/assets/images/nina.png" />
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@NinaCarducciPhoto" />
+    <meta name="twitter:title" content="Nina Carducci - Photographe professionnelle" />
+    <meta name="twitter:description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle spécialisée dans la capture de moments précieux et authentiques. Explorez ses services de photographie de mariage, de portrait et bien plus encore. Contactez-nous pour immortaliser vos souvenirs avec des images exceptionnelles." />
+    <meta name="twitter:image" content="https://nina-carducci.github.io/assets/images/nina.png" />
+    <meta name="twitter:url" content="https://nina-carducci.github.io" />
     <!-- Liens -->
     <!-- Favicon -->
     <link
@@ -176,55 +190,64 @@
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
+            src="./assets/images/gallery/concerts/aaron-paul-on-stage.webp"
             alt="Photographie d'une scène lors d'un concert"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
             alt="Homme habillé en costume avec une cravate rouge"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
             alt="Femme qui sourit lors d'une réunion"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
+            loading="lazy"
             alt="Couple se tenant les mains. Les mains de la personne de droite ont un bague."
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
+            loading="lazy"
             alt="Portrait d'un Homme fermant les yeux"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
+            loading="lazy"
             alt="Couple de mariés devant un palmier"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash.webp"
+            loading="lazy"
             alt="Femme derrière un grillage prenant la pose"
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
+            loading="lazy"
             alt="Artiste sur scène lors d'un concert"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
+            loading="lazy"
             alt="Femme rigolant devant son ordianteur"
           />
         </div>
@@ -340,6 +363,7 @@
           <img
             src="./assets/images/camera.webp"
             alt="Photographie d'un appareil photo"
+            loading="lazy"
           />
         </div>
       </div>
@@ -370,5 +394,25 @@
     <script src="./assets/scripts/magallery.js" defer></script>
     <script src="./assets/scripts/scripts.js" defer></script>
     <script src="./assets/scripts/slider.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "telephone": "05 56 67 78 89",
+        "priceRange": "$$",
+        "openingHours": [
+          "Mo-Fr 10:00-19:00"
+        ],
+        "image": "https://nina-carducci.github.io/assets/images/nina.png"
+      }
+    </script>
   </body>
 </html>
