@@ -29,14 +29,15 @@
     <link
       rel="icon"
       type="image/png"
-      href="./assets/images/favicon-32x32.png"
+      href="./assets/favicon/favicon-32x32.png"
     />
     <!-- CSS -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/style.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -60,9 +61,9 @@
               target="_blank"
             >
               <img
-                src="assets/images/instagram.png"
+                src="assets/images/instagram.webp"
                 alt="Icône de l'application Instragram"
-                aria-label="Instagram"
+                aria-label="Lien vers le profil Instagram de Nina Carducci"
               />
             </a>
           </li>
@@ -103,20 +104,18 @@
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
               class="d-block w-100"
               alt="Homme en costard traversant un passage piéton"
-              width="1920"
-              height="888"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+              data-src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
               class="d-block w-100"
               alt="Hommes dans la foule lors d'un rassemblement festif"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
+              data-src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
               class="d-block w-100"
               alt="Couple de mariés s'embrassant tendrement"
             />
@@ -144,7 +143,12 @@
     </section>
     <section id="about">
       <div class="picture left">
-        <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci" width height />
+        <img
+          src="./assets/images/nina.webp"
+          alt="Portrait de Nina Carducci"
+          width
+          height
+        />
       </div>
       <div id="about-me">
         <h2 class="about-me__title">A propos de moi</h2>
@@ -172,55 +176,55 @@
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"
+            src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
             alt="Photographie d'une scène lors d'un concert"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
+            src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
             alt="Homme habillé en costume avec une cravate rouge"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"
+            src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
             alt="Femme qui sourit lors d'une réunion"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
-            src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
+            src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
             alt="Couple se tenant les mains. Les mains de la personne de droite ont un bague."
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
+            src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
             alt="Portrait d'un Homme fermant les yeux"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
-            src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
+            src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
             alt="Couple de mariés devant un palmier"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images/gallery/portraits/nino-van-prattenburg - 443cl1uR_8-unsplash.jpg"
+            src="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash.webp"
             alt="Femme derrière un grillage prenant la pose"
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"
+            src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
             alt="Artiste sur scène lors d'un concert"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"
+            src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
             alt="Femme rigolant devant son ordianteur"
           />
         </div>
@@ -305,9 +309,21 @@
           </p>
           <form action="" method="post">
             <label for="nom">Nom</label>
-            <input type="text" name="nom" id="nom" aria-required="true" />
+            <input
+              type="text"
+              name="nom"
+              id="nom"
+              aria-required="true"
+              autocomplete="nom"
+            />
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" aria-required="true" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              aria-required="true"
+              autocomplete="email"
+            />
             <label for="message">Message</label>
             <textarea
               name="message"
@@ -315,13 +331,14 @@
               cols="30"
               rows="10"
               aria-required="true"
+              autocomplete="message"
             ></textarea>
             <input type="submit" value="Envoyer" />
           </form>
         </div>
         <div class="picture right">
           <img
-            src="./assets/images/camera.png"
+            src="./assets/images/camera.webp"
             alt="Photographie d'un appareil photo"
           />
         </div>
@@ -343,13 +360,15 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
+      defer
     ></script>
-    <script src="./assets/magallery.js" defer></script>
-    <script src="./assets/scripts.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./assets/scripts/magallery.js" defer></script>
+    <script src="./assets/scripts/scripts.js" defer></script>
+    <script src="./assets/scripts/slider.js" defer></script>
   </body>
 </html>

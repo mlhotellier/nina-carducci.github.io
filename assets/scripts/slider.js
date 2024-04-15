@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){document.querySelectorAll("img[data-src]").forEach((function(t){t.src=t.getAttribute("data-src")}))}));
